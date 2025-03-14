@@ -1,0 +1,74 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    
+    <h3 class="new-heading offset-2">Create a new Listing</h3>
+    <div class="row">
+        <div class="col-8 offset-2"> <!-- //setting to col-8 so that it just occupy the 8part of screen and setting offset to 2 so left side -->
+    <form method="POST" action="/listings" novalidate class="needs-validation"> <!--here this no validation and class="needs-validation" are the bootstrap syntax to show users that they haven't filled the required details-->
+        <div>
+            <label for="title" class="form-label">Title</label>
+            <input 
+             name="listing[title]" 
+             placeholder="enter title" 
+             type="text" 
+             class="form-control" 
+             required 
+            />
+            <div class="invalid-feedback">Title name should be valid</div>
+            <br>
+        </div>
+        <div>
+            <label for="description" class="form-label">Description</label>
+            <textarea name="listing[description]" placeholder="enter description" class="form-control" required></textarea>
+            <div class="invalid-feedback">Description should be valid</div>
+            <br>
+        </div>
+        <div>
+            <label for="image" class="form-label">Image URL/Link</label>
+            <input 
+             name="listing[image]" 
+             placeholder="add image URL/Link" 
+             type="text" class="form-control" 
+            />
+            <br>
+        </div>
+        <div>
+            <label for="price" class="form-label">Price</label>
+            <input 
+             name="listing[price]" 
+             placeholder="enter price" 
+             class="form-control" 
+             required
+            />
+            <div class="invalid-feedback">Price should be valid</div>
+            <br>
+        </div>
+        <div>
+            <label for="location" class="form-label">Location</label>
+            <input 
+             name="listing[location]" 
+             placeholder="location" 
+             type="text" 
+             class="form-control"
+             required
+            />
+            <div class="invalid-feedback">Location should be valid</div>
+            <br>
+        </div>
+        <div>
+            <label for="country" class="form-label">Country</label>
+            <input 
+             name="listing[country]" 
+             placeholder="enter country" 
+             type="text" 
+             class="form-control"
+             required
+            />
+            <div class="invalid-feedback">Country should be valid</div>
+            <br>
+        </div>
+        <button class="btn btn-dark submit-btn">Submit</button><br>
+    </form>
+</div>
+</div>
+</body>

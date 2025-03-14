@@ -1,0 +1,124 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color:#f1d299;
+}
+.container{
+    flex: 1;
+}
+.navbar{
+    height: 5rem;
+    background-color: hsl(16, 99%, 40%);
+
+}
+.fa-bowl-food{
+    color: #ffffff; 
+    font-weight: bold;
+
+}
+.fa-bowl-food:hover{
+    color:#d2c5bb;
+}
+.nav-link{
+    color: #eee4da !important;
+}
+
+/* FOOTER */
+.f-info{
+    text-align: center;
+    height: 8rem;
+    display: flex;
+    background-color: #c33607;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+    color:#ffffff;
+}
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+    width: 100%;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i{
+    font-size:1.2rem ;
+    margin-right: 2rem;
+    color: #ffffff !important;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.f-info-links:hover{
+    text-decoration: underline;
+}
+
+/* CARDS */
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem !important;
+
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+.card-text p{
+    font-weight: 400;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+/* CARD EFFECT */
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity:0.2;
+    background-color: white;
+}
+.submit-btn{
+    background-color: #4CAF50 !important;
+    color: white !important;
+    border: none !important;
+    margin-bottom: 2rem;
+
+}
+.new-heading{
+    color: #D84315;
+}
+/* SHOW PAGE */
+.show-img{
+    height: 30vh;
+}
+.btns{
+    display: flex;
+}
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+.delete-btn {
+    background-color: #E63946 !important; /* Bright Red */
+    color: white !important;
+}
+
+.edit-btn {
+    background-color: #FFC107 !important; 
+    color: black !important;
+}
